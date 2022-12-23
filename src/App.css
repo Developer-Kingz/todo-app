@@ -11,7 +11,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #2f74c0;
+    /* background-color: #c02fb6; */
+    background-image: linear-gradient(to right, rgba(0, 128, 30, 0.641), rgba(0, 85, 255, 0.598));
     font-family: "Neucha", cursive;
   }
   

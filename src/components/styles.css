@@ -58,7 +58,7 @@
     flex-direction: column;
     width: 47.5%;
     padding: 15px;
-    background-color: rgb(50, 195, 205);
+    background-color: rgb(107, 50, 205);
   }
   
   .dragactive {
@@ -66,11 +66,11 @@
   }
   
   .dragcomplete {
-    background-color: rgb(255, 38, 0);
+    background-color: rgb(26, 255, 0);
   }
   
   .remove {
-    background-color: rgb(235, 103, 80);
+    background-color: rgb(80, 235, 98);
   }
   
   .todos__heading {
@@ -84,7 +84,8 @@
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
-    background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
+    /* background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg"); */
+    background-color: grey;
     transition: 0.2s;
   }
   
@@ -132,4 +133,8 @@
       width: 95%;
       margin-bottom: 10px;
     }
+  }
+  .task-app{
+    color: white;
+    margin-bottom: 3vh;
   }

@@ -24,6 +24,7 @@ const App: React.FC = () => {
       <DragDropContext onDragEnd={()=> {}}>
 <div className="App">
             <span className="heading">My Todo-App</span>
+            <h3 className="task-app">Welcome to my TaskApp</h3>
             <InpputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
 
             <TodoList
