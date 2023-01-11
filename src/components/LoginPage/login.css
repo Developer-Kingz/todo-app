@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.login{
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid black; */
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login-left{
+    width: 50vw;
+    height: 100vh;
+    /* border: 1px solid black; */
+    background-color: white;
+    padding-top: 10vh;
+    text-align: center;
+}
+.login-right{
+    width: 50vw;
+    height: 100vh;
+    /* border: 1px solid black; */
+    /* background-image: url('https://popedouglasrecycle.com/wp-content/uploads/2021/02/untitled-1.png'); */
+    background-color: linear-gradient(to right, rgba(0, 128, 30, 0.641), rgba(0, 85, 255, 0.598));
+    background-size: 20vw;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 3px gray;
+    background-position: 10vh 15vw;
+    /* background-color: #19b067; */
+}
+.login-writeup{
+    width: 18vw;
+    height: 25vh;
+    /* border: 1px solid black; */
+    margin-left: 26vw;
+    margin-top: 7vh;
+    text-align: end;
+    color: white;
+}
+.login-btn{
+    color: white;
+    margin-top: 3vh;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 1vh 2vw;
+    border: 1px solid #e8eaed;
+    transition: 0.5s;
+}
+.login-btn:hover{
+    background-color:slategrey;
+    padding: 1.2vh 2.2vw;
+    border: slategrey;
+    cursor: pointer;
+}
+#login-google{
+   margin: 5vh auto;
+   box-shadow: 0 0 3px gray;
+   border-radius: 3px;
+   border: none;
+   cursor: pointer;
+   font-size: small;
+   width: 40vw;
+   height: 0vh;
+   /* border: 1px solid black; */
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+   
+}
+.googleicon{
+    margin-right: 2vw;
+}
+.email-login{
+    width: 30vw;
+    height: 5vh;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+    color: gray;
+}
+.email-login-left{
+    width: 30%;
+    border: 0.5px solid #e8eaed;
+}
+.email-login-right{
+    width: 30%;
+    border: 0.5px solid #e8eaed;
+}
+.login-form{
+    width: 30vw;
+    height: 50vh;
+    /* border: 1px solid black; */
+    margin: 2vh auto;
+    padding-right: 20vw;
+}
+.login-input{
+    width: 30vw;
+    height: 5vh;
+    margin-top: 4px;
+    padding-left: 1vw;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 3px gray;
+}
+.keep{
+    width: 30vw;
+    height: 5vh;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+    color: gray;
+    margin-top: 2vh;
+}
+.login-button{
+    padding: 1.2vh 13.7vw;
+    margin-top: 2vh;
+    background-color: rgba(0, 85, 255, 0.598);
+    /* background-color: linear-gradient(to right, rgba(0, 128, 30, 0.641), rgba(0, 85, 255, 0.598)); */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px gray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.login-button:hover{
+    background-color:slategrey;
+    padding: 1.3vh 13.9vw;
+    border: slategrey;
+}
+.line{
+    width: 30vw;
+    border: 0.5px solid #e8eaed;
+    margin-top: 4vh;
+}
+.dont{
+    width: 30vw;
+    height: 5vh;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    margin-top: 3vh;
+
+}
+.waste-signup{
+    margin-left: 1vw;
+}

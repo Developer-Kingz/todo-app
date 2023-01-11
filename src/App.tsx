@@ -1,41 +1,22 @@
-import React, { useState } from "react";
-import "./App.css";
-import InpputField from "./components/InpputField";
-import TodoList from "./components/TodoList";
-import { Todo } from "./model";
-import { DragDropContext } from 'react-beautiful-dnd'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LoginPage from './components/LoginPage/LoginPage';
+import MyApp from './components/MyApp';
+import Signup from './components/signup/Signup';
 
-const App: React.FC = () => {
-    const [todo, setTodo] = useState<string>("");
-    const [todos, setTodos] = useState<Todo[]>([]);
-    const [completedTodos, setCompletedTodos] = useState<Todo[]>([]);
+function App() {
 
-    const handleAdd = (e: React.FormEvent) => {
-        e.preventDefault();
+  return (
+    <div className='App'>
+      <BrowserRouter>
+      <Routes>
+        <Route path='my-app' element={<MyApp/>}/>
+        <Route path='/' element={<Signup/>}/>
+        <Route path='login' element={<LoginPage/>}/>
+      </Routes>
+      </BrowserRouter>
+    </div>
+  )
+}
 
-        if (todo) {
-            setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
-            setTodo("");
-        }
-    };
-    console.log(todos);
-
-    return (
-      <DragDropContext onDragEnd={()=> {}}>
-<div className="App">
-            <span className="heading">My Todo-App</span>
-            <h3 className="task-app">Welcome to my TaskApp</h3>
-            <InpputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
-
-            <TodoList
-                todos={todos}
-                setTodos={setTodos}
-                completedTodos={completedTodos}
-                setCompletedTodos={setCompletedTodos}
-            />
-        </div>
-      </DragDropContext>
-    );
-};
-
-export default App;
+export default App
